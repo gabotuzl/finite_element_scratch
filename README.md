@@ -1,6 +1,7 @@
 # Finite Element Scratch
 
 **Finite Element Scratch** is a functioning finite element method (FEM) analysis tool built entirely from scratch, using only `numpy` and `sympy` for computation and `matplotlib` for visualization. This project demonstrates the fundamental steps in FEM, including the creation of stiffness matrices, solving global equations, and visualizing results for different cases.
+**Note: All units used in this project are SI units**
 
 ## Features
 
@@ -91,7 +92,7 @@ To define your custom FEM analysis, update the following fields in your script:
 
   Example:
   ```python
-   global_forces = np.zeros(total_dof)
+  global_forces = np.zeros(total_dof)
   loaded_node_1 = 3
   loaded_node_2 = 7
   global_forces[(loaded_node_1 - 1) * node_dof + 1] = -500000
